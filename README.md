@@ -10,10 +10,10 @@
   - TesterKotlin.kt
 
 ## 目前測試資料與結果
-==================
-Please enter number of tickets: 5
-How many round-trip tickets: 3
-Total tickets: 5
-Round-trip: 3
-Total: 7400
+
+Please enter number of tickets: 5  
+How many round-trip tickets: 3  
+Total tickets: 5  
+Round-trip: 3  
+Total: 7400  
 
