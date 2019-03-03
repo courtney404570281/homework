@@ -6,10 +6,10 @@ public class Tester {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
+        // 輸入欲購買之票數
         System.out.print("Please enter number of tickets: ");
         int allTickets = scanner.nextInt();
-
+        // 輸入來回票之票數
         System.out.print("How many round-trip tickets: ");
         int roundTrip = scanner.nextInt();
 
