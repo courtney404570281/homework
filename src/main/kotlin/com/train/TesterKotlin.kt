@@ -3,17 +3,25 @@ package com.train
 import java.lang.Math.round
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
+    var leave = 0
     val scanner = Scanner(System.`in`)
-    // 輸入欲購買之票數
-    print("Please enter number of tickets: ")
-    var allTickets = scanner.nextInt()
-    // 輸入來回票之票數
-    print("How many round-trip tickets: ")
-    val roundTrip = scanner.nextInt()
 
-    val ticket = Tickets(allTickets - roundTrip, roundTrip)
-    print("Total tickets: " + allTickets + "\n" + "Round-trip: " + roundTrip + "\n" + "Total: " + ticket.total())
+    while (leave != -1) {
+        // 輸入欲購買之票數
+        print("Please enter number of tickets: ")
+        var allTickets = scanner.nextInt()
+        // 輸入來回票之票數
+        print("How many round-trip tickets: ")
+        val roundTrip = scanner.nextInt()
+
+        val ticket = Tickets(allTickets - roundTrip, roundTrip)
+        print("Total tickets: " + allTickets + "\n" + "Round-trip: " + roundTrip + "\n" + "Total: " + ticket.total())
+
+        // 是否結束本程式
+        println("Do you want to end the service?(if yes, please enter -1): ")
+        leave = scanner.nextInt()
+    }
 }
 
 class Tickets(var oneWay: Int, var roundTrip: Int){
