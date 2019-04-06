@@ -19,4 +19,4 @@ Total: 7400
 
 ## FlowChart
 
-![](https://imgur.com/m2E3sVs)
+[Imgur](https://i.imgur.com/m2E3sVs.png)
