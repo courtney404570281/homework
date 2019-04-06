@@ -17,3 +17,6 @@ Total tickets: 5
 Round-trip: 3  
 Total: 7400  
 
+## FlowChart
+
+![](https://imgur.com/m2E3sVs)
