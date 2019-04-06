@@ -8,18 +8,33 @@ public class Tester {
         Scanner scanner = new Scanner(System.in);
 
         while (leave != -1) {
+
             // 輸入欲購買之票數
             System.out.print("Please enter number of tickets: ");
             int allTickets = scanner.nextInt();
+
             // 輸入來回票之票數
             System.out.print("How many round-trip tickets: ");
             int roundTrip = scanner.nextInt();
 
-            Ticket ticket = new Ticket(allTickets - roundTrip, roundTrip);
-            System.out.println("Total tickets: " + allTickets + "\n" + "Round-trip: " + roundTrip + "\n" + "Total: " + ticket.total());
-            // 是否結束本程式
-            System.out.println("Do you want to end the service?(if yes, please enter -1): ");
-            leave = scanner.nextInt();
+            if (allTickets < 1 || roundTrip < 0) {
+
+                System.out.println("Please enter the TRUE number!");
+
+            } else {
+
+                // 計算票價與張數
+                Ticket ticket = new Ticket(allTickets - roundTrip, roundTrip);
+                System.out.println("Total tickets: " + allTickets + "\n" + "Round-trip: " + roundTrip + "\n" + "Total: " + ticket.total());
+
+                // 是否繼續交易
+                System.out.println("Next Transaction?(if yes, please enter 0. Otherwise, -1)");
+                leave = scanner.nextInt();
+
+            }
         }
+        // 是否結束本程式
+        System.out.println("Thanks for having you!");
+
     }
 }
