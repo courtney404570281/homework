@@ -33,8 +33,8 @@ public class Tester {
 
             }
         }
-        // 是否結束本程式
-        System.out.println("Thanks for having you!");
+
+        System.out.println("Thanks for having me!");
 
     }
 }
